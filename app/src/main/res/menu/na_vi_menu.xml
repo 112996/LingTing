@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mood"
+            android:title="心情日记"
+            android:icon="@mipmap/mood"></item>
+
+        <item
+            android:id="@+id/about"
+            android:title="关于"
+            android:icon="@mipmap/about"></item>
+    </group>
+
+
+
+
+</menu>

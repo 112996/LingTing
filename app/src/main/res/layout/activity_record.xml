@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bdd6f6"
+    tools:context="yejiangxia.lingting.Main.Record">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="#a7c9f3"
+        android:layout_gravity="center"
+        android:text="历史记录"
+        android:id="@+id/tv"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="1dp"
+        android:background="#1C86EE"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv"
+        android:layout_marginLeft="79dp"
+        android:layout_marginStart="79dp">
+
+    </ListView>
+
+</RelativeLayout>

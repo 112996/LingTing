@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">聆听儿</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_bmob">BmobActivity</string>
+    <string name="title_activity_mood_main">Mood_main</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

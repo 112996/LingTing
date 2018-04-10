@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/bg1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appname"
+        android:text="聆听儿"
+        android:textSize="36dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#8D86CD"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rela">
+
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_btn_press"
+            android:id="@+id/imageButton"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始计时"
+            android:textSize="70px"
+            android:id="@+id/degree"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="60dp"
+            android:layout_alignTop="@+id/imageButton"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/circle"
+            android:id="@+id/imageView"
+            android:layout_marginTop="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timer1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timer2"
+            android:layout_alignBottom="@+id/timer1"
+            android:layout_toEndOf="@+id/timer1"
+            android:layout_toRightOf="@+id/timer1"
+            android:layout_weight="1"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:text="结束"
+        android:textSize="20dp"
+        android:background="@drawable/stop_shape"
+        android:textColor="#FF8888"
+        android:id="@+id/stop"
+        android:layout_below="@+id/rela"
+        android:layout_marginTop="33dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="55dp"
+        android:layout_width="30dp"
+        android:id="@+id/toobar"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="15dp"
+        app:logo="@mipmap/user"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/music"
+        android:background="@mipmap/music"
+        android:layout_below="@+id/toobar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp" />
+    <ImageButton
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:background="@mipmap/record"
+        android:id="@+id/record"
+        android:layout_below="@+id/music"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="45dp"  />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/line"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none"
+        android:id="@+id/horizontalScrollView">
+        <yejiangxia.lingting.BrokenLine.BrokenLineCusVisitView
+            android:id="@+id/brokenline"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+    </HorizontalScrollView>
+
+
+
+
+</RelativeLayout>
